@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <!-- Interacting in site.data.navigation from _data/navigation.yml -->
+    {% for item in site.data.navigation %}
+      <!-- Creating a link with liquid objects and use conditional to specify the color of link to the page in reference -->
+      <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+
+    <!-- Special variable to set de content of site content -->
+    {{ content }}
+  </body>
+</html>
