@@ -1,6 +1,8 @@
-- name: Home
+- name: Sobre
   link: /
-- name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
+- name: Experiências
+  link: /xp.html
+- name: Formação
+  link: /education.html
+# - name: Blog
+#   link: /blog.html
